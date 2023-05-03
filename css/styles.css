@@ -802,9 +802,11 @@ p {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-form-input:hover,
 .modal-form-input:focus {
   border-color: var(--brand-color);
 }
+.modal-form-input:hover ~ .modal-form-icon,
 .modal-form-input:focus ~ .modal-form-icon {
   fill: var(--brand-color);
 }
@@ -836,6 +838,7 @@ p {
 
 .checkbox-wrap {
   display: flex;
+  align-items: center;
 }
 .custom-icon {
   fill: currentColor;
