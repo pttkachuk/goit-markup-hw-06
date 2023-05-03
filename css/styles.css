@@ -40,7 +40,7 @@ textarea {
 }
 .link {
   text-decoration: none;
-  transition: var(--anim-transition);
+  transition: color var(--anim-transition);
 }
 img {
   display: block;
@@ -146,7 +146,7 @@ p {
   line-height: 1.5;
   color: var(--text-color);
   text-decoration: none;
-  transition: var(--anim-transition);
+  transition: color var(--anim-transition);
 }
 .address-contact:hover,
 .address-contact:focus {
@@ -191,7 +191,7 @@ p {
 }
 .hero-button {
   display: block;
-  transition: var(--anim-transition);
+  transition: background-color var(--anim-transition);
 }
 
 .hero-button {
@@ -364,7 +364,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: var(--anim-transition);
+  transition: background-color var(--anim-transition);
 }
 .social-links:hover,
 .social-links:focus {
@@ -406,7 +406,7 @@ p {
   align-items: center;
   justify-content: center;
   color: var(--main-logo-color);
-  transition: var(--anim-transition);
+  transition: color var(--anim-transition), border var(--anim-transition);
 }
 .customers-icon {
   fill: currentColor;
@@ -487,7 +487,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: var(--anim-transition);
+  transition: background-color var(--anim-transition);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -523,7 +523,7 @@ p {
   border-radius: 4px;
   color: var(--white-color);
   background-color: var(--brand-color);
-  transition: var(--anim-transition);
+  transition: background-color var(--anim-transition);
   cursor: pointer;
 }
 .footer-subscribe-btn:hover,
@@ -545,7 +545,8 @@ p {
   border-radius: 4px;
   background-color: var(--main-color);
   outline: 1px solid transparent;
-  transition: var(--anim-transition);
+  transition: color var(--anim-transition),
+    background-color var(--anim-transition), border-color var(--anim-transition);
 }
 .footer-form-input:hover,
 .footer-form-input:focus {
@@ -576,16 +577,18 @@ p {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
-  transition: var(--anim-transition);
+  transition: background-color var(--anim-transition),
+    color var(--anim-transition), box-shadow var(--anim-transition),
+    border var(--anim-transition);
 }
 
 .filters-button:hover,
 .filters-button:focus {
-  background: var(--button-active-color);
+  background-color: var(--button-active-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  /* border-radius: 4px; */
   border: 1px solid transparent;
 }
 .filters-container {
@@ -620,7 +623,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   transform: translateY(100%);
-  transition: var(--anim-transition);
+  transition: transform var(--anim-transition);
 }
 .project-list .item:hover .overlay {
   transform: translateY(0%);
@@ -651,7 +654,7 @@ p {
 }
 .project-link {
   display: block;
-  transition: var(--anim-transition);
+  transition: box-shadow var(--anim-transition);
 }
 .project-list .item {
   width: calc((100% - 48px) / 3);
@@ -725,6 +728,8 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color var(--anim-transition),
+    fill var(--anim-transition);
 }
 
 .modal-close-button:hover,
@@ -786,7 +791,7 @@ p {
   outline: 1px solid transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  transition: var(--anim-transition);
+  transition: border-color var(--anim-transition), fill var(--anim-transition);
 }
 .modal-form-comment {
   padding-left: 16px;
@@ -832,7 +837,8 @@ p {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   color: transparent;
-  transition: var(--anim-transition);
+  transition: background-color var(--anim-transition),
+    border-colo var(--anim-transition), color var(--anim-transition);
   cursor: pointer;
 }
 
@@ -878,7 +884,7 @@ p {
   padding: 16px 32px;
   min-width: 170px;
   margin: 20px auto;
-  transition: var(--anim-transition);
+  transition: background-color var(--anim-transition);
 }
 .modal-form-button:hover,
 .modal-form-button:focus {
